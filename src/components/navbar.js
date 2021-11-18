@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function Navbar() {
+export default function Navbar({children}) {
     return (
+      <div>      
         <Navbar bg="light" expand="lg">
   <Container>
     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
@@ -21,6 +22,9 @@ export default function Navbar() {
     </Navbar.Collapse>
   </Container>
 </Navbar>
+{children}
+
+</div>
     )
 }
 
